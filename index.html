@@ -4,95 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh</title>
+    <title>Dinesh's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/achievements.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
 </head>
 
 <body>
     <header>
-        <h2>Dinesh</h2>
+        <h1>Dinesh's Portfolio</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Achievements</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h1>👋 Hi, I am Dinesh</h1>
-            <h2>I am high school student, I love coding 👨‍💻</h2>
-            <a class="btn" href="#About">Contact Me</a>
+            <h2>👋 Hi, I'm Dinesh</h2>
+            <p class="intro">I'm a high school student with a passion for coding and technology.</p>
+            <a class="btn" href="#contact">Get in Touch</a>
         </section>
 
-        <section id="Achievements">
+        <section id="achievements">
             <h2>Achievements</h2>
-            <div class="container">
-                <div>
-                    <img class="trophy" src="assets/img/trophy-icon.svg" alt="Achievements">
-                </div>
-                <div>
-                    <ul>
-                        <li><span>Science Fair Success:</span> I won a science fair with my innovative project.</li>
-                        <li><span>Research Publication:</span> I have won the opportunity to publish my research
-                            findings in a scientific journal.</li>
-                        <li><span>Academic Excellence:</span> I have won the distinction of maintaining a perfect
-                            GPA in science subjects.</li>
-                        <li><span>National Science Olympiad:</span> I won a medal in a national science Olympiad,
-                            showcasing my knowledge and skills.</li>
-                        <li><span>STEM Competition:</span> I won accolades in STEM competitions, demonstrating my
-                            prowess in science, technology, engineering, and mathematics.</li>
-                        <li><span>Prestigious Internship:</span> I secured a prestigious science internship, winning
-                            the opportunity to gain valuable hands-on experience.</li>
-                        <li><span>Scholarship Recipient:</span> I won a scholarship for my outstanding academic
-                            achievements in science and technology-related fields.</li>
-                        <li><span>Leadership Role:</span> I won the chance to serve as a leader in a science club,
-                            organizing events and projects.</li>
-                        <li><span>AP Exam Success:</span> I won recognition for achieving top scores on Advanced
-                            Placement (AP) exams in various science subjects.</li>
-                        <li><span>College Acceptance:</span> I won admission into a top-tier university for a
-                            science major, setting the stage for my future academic and career success.</li>
-                    </ul>
-                </div>
-            </div>
+            <ul>
+                <li>Science Fair Success: I won a science fair with my innovative project.</li>
+                <li>Research Publication: I have the opportunity to publish my research findings in a scientific journal.</li>
+                <li>Academic Excellence: I maintain a perfect GPA in science subjects.</li>
+                <!-- Add more achievements as needed -->
+            </ul>
         </section>
 
-        <section id="Gallery">
+        <section id="gallery">
             <h2>Gallery</h2>
-            <div class="container">
+            <div class="gallery-container">
                 <img src="assets/gallery/1.jpg" alt="Image 1">
                 <img src="assets/gallery/2.jpg" alt="Image 2">
                 <img src="assets/gallery/3.jpg" alt="Image 3">
-                <img src="assets/gallery/4.jpg" alt="Image 4">
-                <img src="assets/gallery/5.jpg" alt="Image 5">
-                <img src="assets/gallery/6.jpg" alt="Image 6">
-                <img src="assets/gallery/7.jpg" alt="Image 7">
-                <img src="assets/gallery/8.jpg" alt="Image 8">
+                <!-- Add more images to the gallery -->
             </div>
         </section>
 
-        <section id="Contact">
+        <section id="contact">
             <h2>Contact</h2>
             <form action="/submit_contact_form" method="post">
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
                 <label for="phone">Phone:</label><br>
                 <input type="tel" id="phone" name="phone"><br>
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Dinesh. All rights reserved.</p>
+        <p>&copy; 2024 Dinesh's Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
